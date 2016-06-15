@@ -24,19 +24,19 @@ function entryNames()
     
     for (var i = 0; i < names.length; i++)
     {    
-        listNames += names[i] + ", ";
+        listNames += names[i] + "<br>";
         document.getElementById("demo").innerHTML = listNames;
     }
 }
 
 function randomWinner()
 {
-    var result = "";
     
-    for (var i = 0; i < names.length; i++)
-         {
-         result += "The winner is: " + i + "!!!"
-         document.getElementById("demo2").innerHTMl = result;
-         }
+    var randomName = Math.floor(Math.random() * names.length);
+    
+    var winnerName = names[randomName];
+    
+    document.getElementById("demo2").innerHTML = "The winner is: " + winnerName + "!!!";
+    
 }
 
