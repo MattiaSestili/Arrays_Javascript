@@ -1,23 +1,82 @@
+<!DOCTYPE html>
 <html>  
-<head>  
+<head> 
+    
+    <meta charset="utf-8">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+<style>
+    .container.mycontainer{
+        background-color: green;
+        
+    }
+    .jumbotron.mystyle {
+        background-color:chocolate;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .col-sm-offset-4 {
+        margin-left: 33.33333333%;
+    }
+    
+    .col-sm-offset-6 {
+        margin-left: 50%;
+    }
+    
+    </style>
+    
 </head>
 
 <body>
-    <p>Enter the names who are in the draw and then select the random winner!</p>
-        <form>
-            <input type="text" id="input1"/>
-        </form>  
 
-    <div>
-        <button id="button1">Submit</button>
-        <button id="button2">Random Winner</button>
+    <div class="container mycontainer">            
+        
+        <div class="jumbotron mystyle">
+            <h1>Random Winner Generator</h1>
+        </div>
+
+        
+        <div class="row">
+            
+            <div class="col-sm-4">
+                <p>Enter the names who are in the draw and then select the random winner!</p>
+                    <form>
+                        <input type="text" id="input1"/>
+                    </form>
+            </div>
+        </div>
+         
+        <div class="row">
+            <div class="col-sm-4">
+                 <div>
+                    <button id="button1">Submit</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+             <div>
+                <button id="button2" class="btn btn-info btn-block">Generate Winner</button>
+             </div>
+        </div>
+  
+        </div>
+
+        <div id="demo"></div>
+        <div id="demo2"></div>
+
+        <script src="RandomGenerator.js"></script>
+    
     </div>
-
-    
-    <div id="demo"></div>
-    <div id="demo2"></div>
-    
-    <script src="RandomGenerator.js"></script>
     
 </body>
 </html>

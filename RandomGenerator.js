@@ -14,12 +14,12 @@ function entryNames()
     
     if (doubleNames >= 0)
         {   
-            names.pop();
-            document.getElementById("demo2").innerHTML = "The name is already in the list";
+            document.getElementById("demo2").innerHTML = "The name is already in the list." + "<br>" + "Choose another one!";
         }
         else 
             {
                 names.push(userinput);
+                document.getElementById("demo2").innerHTML = "";
             }
     
     for (var i = 0; i < names.length; i++)
